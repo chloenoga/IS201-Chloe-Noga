@@ -1,0 +1,10 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(58, 182, 97); 
+}
+h1, h2, h3{
+    font-family: 'Times New Roman', Times, serif;
+}
+a:hover{
+    color: white !important;
+}
