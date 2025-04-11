@@ -1,0 +1,97 @@
+/* Background and Font Styling */
+body {
+    background-color: #995b7e;
+    font-family: 'Verdana', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+/* Navigation */
+nav {
+    padding: 10px;
+    text-align: left;
+}
+nav a {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.white-link {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  .orange-link {
+    color: orange;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+
+/* Header Section */
+.header {
+    padding: 10px 20px 10px 20px;
+    text-align: left;
+}
+
+.lists {
+    padding: 30px;
+    margin: 20px;
+    text-align: left;
+}
+.lists ol {
+    padding-left: 40px;
+    text-align: left;
+    list-style-position: inside;
+}
+.lists ul {
+    padding-left: 40px;
+    text-align: left;
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+/* Image Styling */
+.image-section {
+    margin: 30px;
+    text-align: left;
+}
+
+/* Video Styling */
+.video-section {
+    padding: 30px;
+    margin: 20px;
+    text-align: left;
+}
+
+/* Anchor Links */
+.anchor-links {
+    margin: 20px;
+    font-size: 18px;
+    text-align: left;
+}
+.anchor-links a {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Tableau Section */
+.tableau-section {
+    padding: 40px;
+    margin: 20px;
+    text-align: left;
+}
+
+/* Extra Style Definition */
+img {
+    border: 4px solid white;
+    border-radius: 8px;
+}
+
+ol li ul li {
+    font-style: italic;
+}

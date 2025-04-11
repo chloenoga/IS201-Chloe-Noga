@@ -1,6 +1,6 @@
 body{
     font-family: 'Times New Roman', Times, serif;
-    background-color: rgb(58, 182, 97); 
+    background-color: rgb(151, 104, 136); 
 }
 h1, h2, h3{
     font-family: 'Times New Roman', Times, serif;
@@ -8,3 +8,22 @@ h1, h2, h3{
 a:hover{
     color: white !important;
 }
+
+.text-muted {
+    color: black !important;
+}
+
+.container .my-4:last-of-type {
+    display: none;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid black;
+}
+
+
+
+
+
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Colorado Hike Generator</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #ff9966, #ff5e62); 
+      font-family: 'Georgia', serif;
+      color: white;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    #hike-box {
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+    button {
+      background-color: #ffcc70;
+      color: #333;
+      font-size: 1.1em;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #f4a259;
+    }
+    a {
+      color: white;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Colorado Hike Generator</h1>
+
+  <div id="hike-box">
+    <h2 id="hike-name">Click below to find a hike!</h2>
+    <p id="hike-desc"></p>
+  </div>
+
+  <button onclick="generateHike()">Find a Hike</button>
+
+  <p><a href="hikes.html">Back to Hiking Page</a></p>
+
+  <script>
+    const hikes = [
+      {
+        name: "Emerald Lake Trail",
+        desc: "A 3.2-mile round trip trail in Rocky Mountain National Park with stunning alpine lakes."
+      },
+      {
+        name: "Sky Pond",
+        desc: "A challenging but rewarding hike to a beautiful alpine lake surrounded by jagged cliffs."
+      },
+      {
+        name: "Maroon Bells Scenic Loop",
+        desc: "An iconic and photogenic trail with breathtaking views of the Maroon Bells."
+      },
+      {
+        name: "Garden of the Gods",
+        desc: "Short, accessible hikes among dramatic red rock formations near Colorado Springs."
+      },
+      {
+        name: "Bear Peak",
+        desc: "A steep climb in Boulder with sweeping views over the Front Range."
+      },
+      {
+        name: "Hanging Lake",
+        desc: "A stunning turquoise lake suspended on a cliff in Glenwood Canyon."
+      },
+      {
+        name: "Mount Elbert",
+        desc: "The highest peak in Colorado! A full-day hike for serious adventurers."
+      },
+      {
+        name: "The Flatirons Loop",
+        desc: "A classic Boulder hike through pine forests and up sloping rock faces."
+      }
+    ];
+
+    function generateHike() {
+      const random = hikes[Math.floor(Math.random() * hikes.length)];
+      document.getElementById("hike-name").textContent = random.name;
+      document.getElementById("hike-desc").textContent = random.desc;
+    }
+  </script>
+
+</body>
+</html>
